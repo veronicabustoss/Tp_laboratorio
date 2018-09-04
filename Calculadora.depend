@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1536087272 source:c:\users\fvg\desktop\tp\calculadora\funcion.c
+
+1536087226 source:c:\users\fvg\desktop\tp\calculadora\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funcion.h"
+
+1536087288 c:\users\fvg\desktop\tp\calculadora\funcion.h
+
