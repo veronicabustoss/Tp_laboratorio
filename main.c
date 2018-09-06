@@ -64,13 +64,20 @@ int main()
                     division=fDivision(op1,op2);
                 }
                 multiplicacion=fMultiplicacion(op1,op2);
-                if(op1<=0 || op2<=0)
+                if(op1<0)
                 {
-                    printf("\nError, no es posible calcular el factorial\n");
+                    printf("\nError, no es posible calcular el factorial A\n");
                 }
                 else
                 {
                     factorialA=(int) factorialUno(op1);
+                }
+                if (op2<0)
+                {
+                    printf("\nError, no es posible calcular el factorial B\n");
+                }
+                else
+                {
                     factorialB=(int) factorialDos(op2);
                 }
 
@@ -88,20 +95,28 @@ int main()
                 printf("\n\nEl resultado de %.3f-%.3f es = %.3f ",op1,op2, resta);
                 if (op2==0)
                 {
-                    printf("\n Error, no es posible mostrar el resultado ");
+                    printf("\n Error, no es posible mostrar el resultado de la division \n");
                 }
                 else
                 {
                     printf("\n\nEl resultado de %.3f/%.3f es = %.3f ",op1,op2, division);
                 }
                 printf("\n\nEl resultado de %.3f*%.3f es = %.3f ",op1,op2, multiplicacion);
-                if(op1<=0 || op2<=0)
+                if(op1<0)
                 {
-                    printf("\n Error, no es posible mostrar el resultado ");
+                    printf("\n Error, no es posible mostrar el resultado del factorial A \n");
                 }
                 else
                 {
                     printf("\n\nEl resultado de %.0f! es = %d ",op1,factorialA);
+
+                }
+                if (op2<0)
+                {
+                    printf("\n Error, no es posible mostrar el resultado del factorial B \n");
+                }
+                else
+                {
                     printf("\n\nEl resultado de %.0f! es = %d \n\n ",op2,factorialB);
                 }
 
